@@ -1,0 +1,24 @@
+{
+  "name": "memory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "memory",
+  "author": "Aamir Khan",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.3.0",
+    "gatsby-plugin-postcss": "^5.3.0",
+    "postcss": "^8.4.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
