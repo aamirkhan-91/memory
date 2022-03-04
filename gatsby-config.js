@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: 'https://www.yourdomain.tld',
     title: 'memory',
   },
+  pathPrefix: '/memory',
   plugins: [
     'gatsby-plugin-postcss',
     {
