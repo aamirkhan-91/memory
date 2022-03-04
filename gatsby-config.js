@@ -9,7 +9,10 @@ module.exports = {
       resolve: 'gatsby-plugin-alias-imports',
       options: {
         alias: {
+          '@src': './src',
           '@core-components': './src/components/core',
+          '@components': './src/components',
+          '@hooks': './src/hooks',
         },
         extensions: ['.ts', '.tsx'],
       },

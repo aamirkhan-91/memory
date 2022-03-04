@@ -12,7 +12,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    // 'prettier',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -24,9 +24,11 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'import', 'simple-import-sort'],
   rules: {
+    'react/jsx-boolean-value': 2,
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     'linebreak-style': ['error', 'unix'],
+    'jsx-quotes': ['error', 'prefer-single'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'no-unused-vars': 'off',
@@ -37,7 +39,12 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [['@core-components/*', './src/components/core']],
+        map: [
+          ['@src/*', './src'],
+          ['@core-components/*', './src/components/core'],
+          ['@components/*', './src/components'],
+          ['@hooks/*', './src/hooks'],
+        ],
         extensions: ['.ts', '.tsx'],
       },
     },
