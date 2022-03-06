@@ -19,6 +19,7 @@ const InGameMenuDialog: FC<Props> = ({ show, onClose }) => {
     resetElapsedTime();
     initializeBoard();
     setGameEnded(false);
+    onClose();
   };
 
   const setupNewGame = () => {
