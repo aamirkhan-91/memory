@@ -92,17 +92,13 @@ const Board: FC = () => {
   }
 
   let classes =
-    'grid gap-2 h-[327px] w-[327px] sm:h-[550px] sm:w-[550px] m-auto'.split(
+    'grid gap-2 min-w-[327px] min-h-[327px] h-[327px] w-[327px] xs:w-[450px] xs:h-[450px] sm:h-[550px] sm:w-[550px] m-auto'.split(
       ' '
     );
 
   switch (gridSize) {
     case 4:
       classes = classes.concat('grid-cols-4 grid-rows-4');
-      break;
-
-    case 5:
-      classes = classes.concat('grid-cols-5 grid-rows-5');
       break;
 
     case 6:
@@ -115,8 +111,8 @@ const Board: FC = () => {
       {grid.map((row, rowIndex) =>
         row.map((cellState, columnIndex) => (
           <Cell
-            key={`${rowIndex}_${columnIndex}`}
             {...cellState}
+            key={`${rowIndex}_${columnIndex}`}
             onClick={() =>
               revealCell({
                 row: rowIndex,

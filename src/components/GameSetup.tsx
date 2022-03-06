@@ -63,14 +63,6 @@ const GameSetup: FC = () => {
             <Button
               fullWidth
               variant='menu'
-              isActive={gridSize === 5}
-              onClick={() => setGridSize(5)}
-            >
-              5x5
-            </Button>
-            <Button
-              fullWidth
-              variant='menu'
               isActive={gridSize === 6}
               onClick={() => setGridSize(6)}
             >

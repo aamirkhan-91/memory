@@ -51,17 +51,13 @@ const Typography: FC<TypographyProps> = ({
 
   if (variant === '4X4') {
     return (
-      <p className={clsx(classes, 'text-4X4-mobile tablet:text-4X4')}>
-        {children}
-      </p>
+      <p className={clsx(classes, 'text-4X4-mobile sm:text-4X4')}>{children}</p>
     );
   }
 
   if (variant === '6X6') {
     return (
-      <p className={clsx(classes, 'text-6X6-mobile tablet:text-6X6')}>
-        {children}
-      </p>
+      <p className={clsx(classes, 'text-6X6-mobile sm:text-6X6')}>{children}</p>
     );
   }
 

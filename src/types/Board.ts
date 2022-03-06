@@ -1,4 +1,4 @@
-export type GridSize = 4 | 5 | 6;
+export type GridSize = 4 | 6;
 
 export type BoardType = 'numbers' | 'icons';
 
