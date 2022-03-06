@@ -14,16 +14,12 @@ const GameSetup: FC = () => {
   return (
     <div
       role='presentation'
-      className='absolute top-0 left-0 h-full w-full bg-dark'
+      className='flex flex-col justify-center items-center h-full w-full bg-dark'
     >
-      <Typography
-        className='absolute left-1/2 transform -translate-x-1/2 top-[20%]'
-        variant='H2'
-        color='white'
-      >
+      <Typography className='mb-8 -mt-8' variant='H2' color='white'>
         memory
       </Typography>
-      <div className='z-[11] w-[327px] p-6 rounded-lg bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+      <div className='p-6 w-[327px] rounded-lg bg-white'>
         <div>
           <Typography variant='Body' color='grey-dark'>
             Select Theme
