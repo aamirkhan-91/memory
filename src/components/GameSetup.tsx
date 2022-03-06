@@ -16,7 +16,7 @@ const GameSetup: FC = () => {
       role='presentation'
       className='flex flex-col justify-center items-center h-full w-full bg-dark'
     >
-      <Typography className='mb-8 -mt-8' variant='H2' color='white'>
+      <Typography className='mb-8 -mt-16' variant='H2' color='white'>
         memory
       </Typography>
       <div className='p-6 w-[327px] rounded-lg bg-white'>

@@ -22,6 +22,8 @@ const Timer: FC = () => {
     } else if (gameEnded && intervalRef.current) {
       clearInterval(intervalRef.current);
     }
+
+    return () => clearInterval(intervalRef.current as NodeJS.Timeout);
   }, [gameStarted, gameEnded, tickElapsedTime]);
 
   return (
