@@ -28,11 +28,11 @@ const Header: FC<Props> = ({ onClickMenu }) => {
   };
 
   return (
-    <div className='flex justify-between items-center'>
+    <div className='flex justify-between items-center md:max-w-[1200px] mx-auto w-full'>
       <Typography className='flex-1' variant='H2' color='dark'>
         memory
       </Typography>
-      <div className='flex-1 hidden sm:flex space-x-4'>
+      <div className='flex-1 hidden sm:flex space-x-4 max-w-[400px]'>
         <Button fullWidth variant='primary' onClick={restartGame}>
           Restart
         </Button>

@@ -22,7 +22,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'import', 'simple-import-sort'],
+  plugins: ['@typescript-eslint', 'import', 'simple-import-sort'],
   rules: {
     'react/jsx-boolean-value': 2,
     'simple-import-sort/imports': 'error',
