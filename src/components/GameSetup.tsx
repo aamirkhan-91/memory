@@ -1,5 +1,6 @@
 import { Button, Typography } from '@core-components';
 import { useStore } from '@src/store';
+import { motion } from 'framer-motion';
 import React, { FC } from 'react';
 
 const GameSetup: FC = () => {
@@ -12,7 +13,16 @@ const GameSetup: FC = () => {
   const startGame = useStore((state) => state.setGameStarted);
 
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+      }}
       role='presentation'
       className='flex flex-col justify-center items-center h-full w-full bg-dark'
     >
@@ -75,7 +85,7 @@ const GameSetup: FC = () => {
           Start Game
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

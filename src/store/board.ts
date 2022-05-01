@@ -12,7 +12,6 @@ const shuffleArray = (array: number[]): number[] => {
   return array;
 };
 
-// const useStore = create<Store>((set) => ({
 export const createBoardSlice: StoreSlice<BoardSlice> = (set) => ({
   grid: null,
   gridSize: 4,

@@ -41,7 +41,9 @@ const Button: FC<ButtonProps> = ({
   if (variant === 'primary') {
     classes = classes.concat('bg-orange hover:bg-orange-hover');
   } else if (variant === 'secondary') {
-    classes = classes.concat('bg-grey hover:bg-blue-hover text-grey-dark');
+    classes = classes.concat(
+      'bg-grey text-grey-dark hover:bg-blue-hover hover:text-white'
+    );
   } else if (variant === 'menu') {
     if (isActive) {
       classes.push('bg-grey-dark');

@@ -33,7 +33,7 @@ const PostGameDialog: FC<Props> = ({ show }) => {
 
   return (
     <Dialog show={show}>
-      <div className='z-[11] w-[327px] p-6 rounded-lg bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+      <div className='bg-white'>
         <Typography variant='H2' color='dark' className='text-center'>
           You did it!
         </Typography>

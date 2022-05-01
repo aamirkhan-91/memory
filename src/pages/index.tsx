@@ -1,6 +1,7 @@
 import { GameSettings, Memory } from '@components';
 import PostGameDialog from '@src/components/PostGameDialog';
 import { useStore } from '@src/store';
+import { AnimatePresence } from 'framer-motion';
 import React, { FC } from 'react';
 
 const IndexPage: FC = () => {
@@ -10,9 +11,14 @@ const IndexPage: FC = () => {
   return (
     <>
       <div id='modal-root' />
-      {!gameStarted && <GameSettings />}
       <PostGameDialog show={gameEnded} />
-      {gameStarted && <Memory />}
+      <AnimatePresence exitBeforeEnter initial={false}>
+        {gameStarted ? (
+          <Memory key='memory' />
+        ) : (
+          <GameSettings key='game-settings' />
+        )}
+      </AnimatePresence>
     </>
   );
 };
